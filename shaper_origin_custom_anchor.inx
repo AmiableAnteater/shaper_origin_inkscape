@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#
+# Copyright (C) 2022, 2026 Andreas Zielke
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    #
+-->
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Shaper Origin Place Custom Anchor</name>
+    <id>zielke.andreas.ShaperOriginCustomAnchor</id>
+
+    <param name="axis_orientation" type="optiongroup" appearance="combo" gui-text="Axis orientation:">
+        <option value="RT">X-Axis to the right, Y-Axis to the top</option>
+        <option value="RB">X-Axis to the right, Y-Axis to the bottom</option>
+        <option value="LT">X-Axis to the left, Y-Axis to the top</option>
+        <option value="LB">X-Axis to the left, Y-Axis to the bottom</option>
+    </param>
+
+    <separator />
+
+    <param name="x_placement" type="optiongroup" appearance="combo" gui-text="Horizontal anchor placement:">
+        <option value="l">Left</option>
+        <option value="m">Middle</option>
+        <option value="r">Right</option>
+    </param>
+
+    <param name="y_placement" type="optiongroup" appearance="combo" gui-text="Vertical anchor placement:">
+        <option value="t">Top</option>
+        <option value="m">Middle</option>
+        <option value="b">Bottom</option>
+    </param>
+
+    <separator />
+
+   <param name="x_size" type="float" precision="1" min="2" max="50" gui-text="Size of x-axis">10</param> 
+
+    <effect>
+        <effects-menu>
+            <submenu name="Shaper Origin"/>
+        </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">shaper_origin_custom_anchor.py</command>
+    </script>
+</inkscape-extension>

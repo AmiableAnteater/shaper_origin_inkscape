@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#
+# Copyright (C) 2022, 2026 Andreas Zielke
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+-->
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Shaper Origin Cut Type and Depth</name>
+  <id>zielke.andreas.ShaperOriginTypeAndDepth2</id>
+  <param name="routing_type" type="optiongroup" appearance="combo" gui-text="Cut type:">
+	<option value="INTERIOR">Interior cut</option>
+	<option value="EXTERIOR">Exterior cut</option>
+	<option value="ON_LINE">On line cut</option>
+	<option value="POCKET">Pocketing cut</option>
+	<option value="GUIDE">Guide</option>
+  </param>
+  
+  <separator />
+  
+  <param name="use_depth" type="bool" gui-text="Set cut depth?">true</param>
+  <param name="depth" type="float" min="0" max="45" precision="3" gui-text="Cut depth (will only be applied, if previous check-box is checked):">5</param>
+  <param name="depth_dimension" type="optiongroup" appearance="combo" gui-text="Metric or imperial system">
+	<option value="mm">Metric system [mm]</option>
+	<option value="in">Imperial system [inch]</option>
+  </param>
+  
+  <effect>
+    <!--object-type>path</object-type-->
+    <effects-menu>
+      <submenu name="Shaper Origin"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">shaper_origin_type_and_depth.py</command>
+  </script>
+</inkscape-extension>

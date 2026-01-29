@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#
+# Copyright (C) 2022, 2026 Andreas Zielke
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+-->
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Shaper Origin Place Dovetails</name>
+    <id>zielke.andreas.ShaperOriginDovetails</id>
+
+    <hbox>
+        <vbox>
+            <label appearance="header">
+                1) Router bits
+            </label>
+            <label>
+                The image shows a cross-cut through the dovetail router bit (in green). 
+            </label>
+            <label>
+                To enable this plug-in to calculate cutting paths, you have to specify 
+                two parameters: the cut angle α and the diameter d of the bit. 
+            </label>
+            <label>
+                For example: the metric dovetail router bit sold by Shaper has a cut 
+                angle α of 15° and a diameter d of 13.8mm.
+            </label>
+            <label>
+                You also have to specify the diameter of the straight bit you are using 
+                for routing the pins into the grey board. (This value is used to do
+                plausibility checks as well as to calculate a sufficient cut buffer 
+                on both sides of the board.)
+            </label>
+            <spacer />
+            <label appearance="header">
+                2) The boards
+            </label>
+            <label>
+                You have to specify the thickness for each individual board and the
+                (identical) width of both boards in the input section "Boards data".
+            </label>
+            <spacer />
+            <label appearance="header">
+                3) The tails
+            </label>
+            <label>
+                The example image shows a single full dovetail - the one cut into the blue 
+                colored board, marked with the red edge. 
+                You can specify the number of full dovetails in the section "Dovetails data" below.
+            </label>
+            <label>
+                The red edge is the width of the dovetail, which you also specify in the 
+                same input section. 
+            </label>
+            <label>
+                When you specify an odd number of tails, additional "half-tails" 
+                will be added at the start and the end of the tail board.
+                In the image the "half-tails" have yellow edges, which will 
+                be calculated to be half the tail width.
+            </label>
+        </vbox>
+        <spacer />
+        <image>./dovetail_with_router_bit.png</image>
+    </hbox>
+    <separator />
+    <hbox>
+        <vbox>
+            <label appearance="header">
+                Router bits data
+            </label>
+            <param name="cut_angle" type="float" precision="1" min="10" max="30" gui-text="Cut angle α [degrees]:" gui-description="Should be displayed on the shank of your bit.">
+                15.0
+            </param>
+            <param name="tail_bit_diameter" type="float" precision="1" min="1" max="30" gui-text="Diameter of dovetail bit [mm]:" gui-description="Should be displayed on the shank of your bit.">
+                13.8
+            </param>
+            <param name="pin_bit_diameter" type="float" precision="1" min="1" max="30" gui-text="Diameter of straight bit [mm]:" gui-description="This has to be sufficiently smaller than the width of the dovetails.">
+                8.0
+            </param>
+        </vbox>
+        <spacer size="20"/>
+        <separator />
+        <spacer size="20"/>
+        <vbox>
+            <label appearance="header">
+                Board data
+            </label>
+            <param name="tail_thickness" type="float" precision="2" min="1" max="50" gui-text="Thickness of blue tails board [mm]">
+                12.0
+            </param>
+            <param name="pin_thickness" type="float" precision="2" min="1" max="50" gui-text="Thickness of grey pins board [mm]">
+                12.0
+            </param>
+            <param name="width" type="float" precision="2" min="1" max="1000" gui-text="Width of the boards [mm]">
+                150.0
+            </param>
+        </vbox>
+        <spacer size="20"/>
+        <separator />
+        <spacer size="20"/>
+        <vbox>
+            <label appearance="header">
+                Dovetails data
+            </label>
+            <param name="num_tails" type="int" min="1" max="20" gui-text="Number of tails">
+                2
+            </param>
+            <param name="width_tails" type="float" min="1" max="1000" precision="2" gui-text="Width of the tails (red line) [mm]" gui-description="This has to be sufficiently larger than the diameter of the pin routing bit.">
+                20.0
+            </param>
+        </vbox>
+    </hbox>
+
+    <effect>
+        <effects-menu>
+            <submenu name="Shaper Origin"/>
+        </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">shaper_origin_dovetails.py</command>
+    </script>
+</inkscape-extension>
