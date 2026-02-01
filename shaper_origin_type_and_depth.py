@@ -43,6 +43,8 @@ class ShaperOriginTypeAndDepthExtension(ShaperEffectExtension):
             routing_type.apply_to(elem)
             if self.options.use_depth:
                 self.add_depth_info(elem, self.options.depth, self.options.depth_dimension)
+            else:
+                self.add_depth_info(elem, None)
  
 
 if __name__ == '__main__':

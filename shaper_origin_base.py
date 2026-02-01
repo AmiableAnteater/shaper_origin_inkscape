@@ -108,7 +108,10 @@ class ShaperEffectExtension(inkex.EffectExtension):
         """Apply some effects on the document or local context"""
         raise NotImplementedError(f"No effect handle for {self.name}")
         
-    def add_depth_info(self, element, depth, dimension):
+    def add_depth_info(self, element, depth=None, dimension=None):
+        if depth is None or dimension is None:
+            element.pop("shaper:cutDepth")
+            return
         encoded_depth = "{:.3f}".format(depth) + dimension
         element.set("shaper:cutDepth", encoded_depth)
 
