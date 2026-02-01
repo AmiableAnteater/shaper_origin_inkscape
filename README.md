@@ -3,7 +3,8 @@ A collection of [Inkscape](https://inkscape.org/) extensions to create routing p
 
 The following functionalities are provided by the extensions:
 * placing a [custom anchor point](https://support.shapertools.com/hc/en-us/articles/4402965445019-custom-anchors)
-* assigning the [cut type](https://support.shapertools.com/hc/en-us/articles/115002894673-cut-types) and the [encoded cutting depth](https://support.shapertools.com/hc/en-us/articles/10400926390683-Encoded-depth) to selected shapes
+* assigning the [cut type](https://support.shapertools.com/hc/en-us/articles/115002894673-cut-types) and the [encoded cutting depth](https://support.shapertools.com/hc/en-us/articles/10400926390683-Encoded-depth) to selected shapes.
+  This eliminates the need to remember the different color combinations for fill and stroke and lowers the risk of routing to the wrong depth. 
 * generation of cut paths for [dovetail joints](https://en.wikipedia.org/wiki/Dovetail_joint) based on parameters like the number of tails, the width of the tails, the angle of the router bit etc.
 
 ## Caveat
