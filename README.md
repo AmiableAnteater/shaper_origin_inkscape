@@ -33,7 +33,7 @@ These are some tipps that will make it easier for you to design things for the S
 
 Configure the **coordinate system** and the **dimensions** in your document so that they conform to the Shaper Origin system.
 * Inkscape uses a coordinate system with a y-axis that points downwards. Your Shaper Origin uses a y-axis that points upwards.
-  To change this, open the Preferences menu (as described in the section ["How to install"](how-to-install)).
+  To change this, open the Preferences menu (as described in the section ["How to install"](#how-to-install)).
   Click on "Interface" in the left hand side of the dialog then remove the checkmark from the entry "Origin at upper left ..."
   You need to restart Inkscape (once) to apply this change.
 * Open the document properties (Win/Linux: Ctrl-Shift-D, Mac: Command-Shift-D) and change the dimensions to Millimeter under "Front page" and "Display" (or choose Inches, if you are so inclined...).
@@ -54,7 +54,7 @@ the plugin. It cannot replace anchors, that you have created by hand.
 
 As the dialog for the plugin is pretty self-explanatory I feel that I can skip documenting most
 of the options in the dialog. One thing though - the size of the x-axis is specified in the 
-dimension that you configured in the document properties. If you followed the ["Before you start"](before-you-start)
+dimension that you configured in the document properties. If you followed the ["Before you start"](#before-you-start)
 tipps, this should be Millimeter or Inches.
 
 ### Cut type and depth
