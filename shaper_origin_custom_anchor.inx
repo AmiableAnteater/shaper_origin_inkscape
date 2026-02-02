@@ -18,7 +18,7 @@
     #
 -->
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-    <name>Shaper Origin Place Custom Anchor</name>
+    <name>Place Custom Anchor</name>
     <id>zielke.andreas.ShaperOriginCustomAnchor</id>
 
     <param name="axis_orientation" type="optiongroup" appearance="combo" gui-text="Axis orientation:">

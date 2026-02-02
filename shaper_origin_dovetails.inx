@@ -18,7 +18,7 @@
 #
 -->
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-    <name>Shaper Origin Place Dovetails</name>
+    <name>Place Dovetails</name>
     <id>zielke.andreas.ShaperOriginDovetails</id>
 
     <hbox>

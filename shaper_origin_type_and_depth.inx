@@ -18,7 +18,7 @@
 #
 -->
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-  <name>Shaper Origin Cut Type and Depth</name>
+  <name>Cut Type and Depth</name>
   <id>zielke.andreas.ShaperOriginTypeAndDepth2</id>
   <param name="routing_type" type="optiongroup" appearance="combo" gui-text="Cut type:">
 	<option value="INTERIOR">Interior cut</option>
