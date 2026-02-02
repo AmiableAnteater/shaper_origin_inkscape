@@ -18,8 +18,7 @@ The software is developed as a hobby project in the hope that it will be useful 
 
 
 ## How to install
-1. Click on the green button labeled "Code" at the top of this page.
-2. A menu appears, click on the last line "Download ZIP".
+1. [Download the ZIP-Archive of this repo by clicking on this link.](https://github.com/AmiableAnteater/shaper_origin_inkscape/archive/refs/heads/main.zip) (You can also click on the green button labeled "Code" at the top of this page and choose "Download ZIP".)
 3. Unpack the ZIP file.
 4. Open Inkscape and navigate to the Preferences menu. On Windows and Linux this is in the "Edit" menu. On Mac this is called "Settings" in the "Inkscape" menu.)
 5. Within the Preferences dialog click on System - a list of various directories appears.
