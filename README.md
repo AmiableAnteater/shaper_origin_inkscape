@@ -34,21 +34,26 @@ Shaper Tools, Inc. is in no way associated with this software.
 These are some tipps that will make it easier for you to use Inkscape for the Shaper Origin.
 
 > [!TIP]
-> Configure the **coordinate system**:
-> Inkscape uses a coordinate system with a y-axis that points downwards. Your Shaper Origin uses a y-axis that points upwards.
-> To change this, open the `Preferences` (as described in the section ["How to install"](#how-to-install)).
-> Click on `Interface` in the left hand side of the dialog then remove the checkmark from the entry `Origin at upper left ...`
-> You need to restart Inkscape (once) to apply this change.
+> Configure the **coordinate system**, so that the y-axis points upwards.
+
+Inkscape uses a coordinate system with a y-axis that points downwards. Your Shaper Origin uses a y-axis that points upwards.
+To change this, open the `Preferences` (as described in the section ["How to install"](#how-to-install)).
+Click on `Interface` in the left hand side of the dialog then remove the checkmark from the entry `Origin at upper left ...`
+You need to restart Inkscape (once) to apply this change.
+
 
 > [!TIP]
 > Change the **dimensions** in your document so that they are identical to the Shaper Origin system.
-> Open the `document properties` (Win/Linux: `Ctrl-Shift-D`, Mac: `Command-Shift-D`) and change the dimensions to Millimeter under `Front page` and `Display` (or choose Inches, if you are so inclined...).
+
+Open the `document properties` (Win/Linux: `Ctrl-Shift-D`, Mac: `Command-Shift-D`) and change the dimensions to Millimeter under `Front page` and `Display` (or choose Inches, if you are so inclined...).
 
 > [!TIP]
-> From my experience **single line fonts** are a bit overlooked in Inkscape. There is an extension called `Herschey Text`, which is part of the regular Inkscape install.
-> It comes with two single line fonts that are not very pretty in my eyes, but do the job for guides.
-> If you are interested in more options, see the [webpage by Cutlings](https://cutlings.datafil.no/smoothed-single-line-fonts/), which contains quite a few fonts that are usable with the `Hershey Text` extension.
-> Also do have a look at the very clean [Relief SingleLine](https://github.com/isdat-type/Relief-SingleLine) font, which also contains detailed instructions how to use it with the `Hershey Text` plugin.
+> How to use **Single Line Fonts**
+
+From my experience **single line fonts** are a bit overlooked in Inkscape. There is an extension called `Herschey Text`, which is part of the regular Inkscape install.
+It comes with two single line fonts that are not very pretty in my eyes, but do the job for guides.
+If you are interested in more options, see the [webpage by Cutlings](https://cutlings.datafil.no/smoothed-single-line-fonts/), which contains quite a few fonts that are usable with the `Hershey Text` extension.
+Also do have a look at the very clean [Relief SingleLine](https://github.com/isdat-type/Relief-SingleLine) font, which also contains detailed instructions how to use it with the `Hershey Text` plugin.
 
 
 ## The extensions
