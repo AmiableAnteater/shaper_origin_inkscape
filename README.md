@@ -8,6 +8,7 @@ The following functionalities are provided by the extensions:
   This eliminates the need to remember the different color combinations for fill and stroke and lowers the risk of cutting to the wrong depth. 
 * generation of cut paths for [dovetail joints](https://en.wikipedia.org/wiki/Dovetail_joint) based on parameters like the number of tails, the width of the tails, the angle of the router bit etc.
 
+![Screenshot of the "Set cut type and depth" extension](/assets/inkscape_extension.png)
 
 ## Caveat
 SHAPER ORIGIN is trademark of Shaper Tools, Inc., registered in the United States and/or other jurisdictions.
