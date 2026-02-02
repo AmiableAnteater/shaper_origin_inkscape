@@ -1,4 +1,4 @@
-# Inkscape Extensions to create routing 
+# Inkscape Extensions for Shaper Origin
 
 A collection of [Inkscape](https://inkscape.org/) extensions to create routing paths used on the awesome [Shaper Origin](https://www.shapertools.com/) handheld CNC router.
 
