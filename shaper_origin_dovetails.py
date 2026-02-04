@@ -263,7 +263,7 @@ class ShaperOriginDovetailsExtension(ShaperEffectExtension):
                     "specified for\n  1) cutting angle "
                     f"({self.options.cut_angle}°),\n"
                     f"  2) dovetail bit diameter ({self.options.tail_bit_diameter}"
-                    "mm) and\n  3) the thickness of the pins board ("
+                    "mm) and\n  3) the thickness of the grey pins board ("
                     f"{self.options.pin_thickness}mm, determines the plunge "
                     "depth) lead to a geometry that is impossible to cut.\n\n"
                     "Please re-check these parameters.")
@@ -285,8 +285,9 @@ class ShaperOriginDovetailsExtension(ShaperEffectExtension):
         if self.smaller_width_tails  < self.options.pin_bit_diameter:
             return ("The specified width of the tails (red line) is "
                     f"{self.options.width_tails}mm, which results in a "
-                    f"(lower/smaller) width of {self.smaller_width_tails:.2f}"
-                    "mm.\n\nThis is smaller than the diameter of your straight"
+                    f"(lower/smaller) width (dotted red line) of "
+                    "{self.smaller_width_tails:.2f}mm.\n\n"
+                    "This is smaller than the diameter of your straight"
                     f" router bit ({self.options.pin_bit_diameter}mm).\n\n"
                     "As this bit cannot cut a gap this small, this cannot "
                     "work.\n\nYou'll either have to use a thinner straight "
@@ -321,11 +322,12 @@ class ShaperOriginDovetailsExtension(ShaperEffectExtension):
         if self.individual_width_of_tail_cut < self.upper_tail_diameter:
             return ("The calculated width of the cuts made between the "
                     f"dovetails is {self.individual_width_of_tail_cut:.2f}"
-                    "mm.\n\nYou will not be able to make these cuts, as the "
+                    "mm (see pink line in the graphics).\n\n"
+                    "You will not be able to make these cuts, as the "
                     "diameter of your dovetail bit is "
                     f"{self.upper_tail_diameter:.2f}mm when plunged "
                     f"down to {self.options.pin_thickness}mm depth (i.e. the "
-                    "thickness of the pins board).\n\n"
+                    "thickness of the grey pins board).\n\n"
                     "Please reduce the number of tails or the tail width "
                     "accordingly.")
         return None

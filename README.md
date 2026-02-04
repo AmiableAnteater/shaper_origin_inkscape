@@ -103,3 +103,5 @@ of your dovetail and your straight router bits as well as the number and width o
 The extension is only able to generate routing paths for dovetails with the same width. If you would
 like to create dovetails with different sizes, you'll have to modify the results of the extension by hand.
 
+This extension will get it's own documentation page in the near future. Until then follow the 
+description in the dialog of the plugin, which contains quite a bit of information.
