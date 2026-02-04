@@ -37,7 +37,7 @@ These are some tipps that will make it easier for you to use Inkscape for the Sh
 > Configure the **coordinate system**, so that the y-axis points upwards.
 
 Inkscape uses a coordinate system with a y-axis that points downwards. Your Shaper Origin uses a y-axis that points upwards.
-To change this, open the `Preferences` (as described in the section ["How to install"](#how-to-install)).
+To change this, open the `Preferences` (as described in the section ["How to install"](#how-to-install), Step 3).
 Click on `Interface` in the left hand side of the dialog then remove the checkmark from the entry `Origin at upper left ...`
 You need to restart Inkscape (once) to apply this change.
 
@@ -105,3 +105,5 @@ like to create dovetails with different sizes, you'll have to modify the results
 
 This extension will get it's own documentation page in the near future. Until then follow the 
 description in the dialog of the plugin, which contains quite a bit of information.
+
+![Screenshot of the "Place Dovetails" extension](/assets/dovetail_dialog.png)
