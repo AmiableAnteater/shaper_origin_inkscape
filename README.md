@@ -64,7 +64,7 @@ This is the simplest extension. It places a red triangle - as specified by
 into the document. You can set the parameters for axis orientation (which is probably useless, 
 but I'm still experimenting with it), placement on the page and size. You can move the anchor
 after placing. If you use the plugin again, it will replace an anchor placed previously with
-the plugin. It cannot replace anchors, that you have created by hand.
+the plugin. It cannot replace anchors that you have created by hand.
 
 As the dialog for the plugin is pretty self-explanatory I feel that I can skip documenting most
 of the options in the dialog. One thing though - the size of the x-axis is specified in the 
@@ -94,6 +94,8 @@ Usage is as follows:
 * **Important:** If you are happy with the entered values, always use the "Apply" button. The "Close"
   button will undo current changes, even if the live preview has been activated. This is standard
   Inkscape behaviour.
+
+Pre-encoded depths always have been great - but with Benchpilot they are even better.
 
 ### Place dovetails
 This is the most complicated plugin. It is able to generate cut paths for joining to boards using
