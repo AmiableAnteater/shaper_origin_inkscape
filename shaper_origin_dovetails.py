@@ -286,7 +286,7 @@ class ShaperOriginDovetailsExtension(ShaperEffectExtension):
             return ("The specified width of the tails (red line) is "
                     f"{self.options.width_tails}mm, which results in a "
                     f"(lower/smaller) width (dotted red line) of "
-                    "{self.smaller_width_tails:.2f}mm.\n\n"
+                    f"{self.smaller_width_tails:.2f}mm.\n\n"
                     "This is smaller than the diameter of your straight"
                     f" router bit ({self.options.pin_bit_diameter}mm).\n\n"
                     "As this bit cannot cut a gap this small, this cannot "
